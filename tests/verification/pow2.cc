@@ -11,10 +11,6 @@
 // 	return a;
 // }
 
-// TODO: array modification, incrementing index by 2 each iteration
-// TODO: linked list operations (what do we get?)
-// TODO: pointer operations (array-based heap?)
-
 using namespace crab::analyzer;
 using namespace crab::cfg;
 using namespace crab::cfg_impl;
