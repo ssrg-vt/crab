@@ -16,7 +16,7 @@ using namespace crab::cfg;
 using namespace crab::cfg_impl;
 using namespace crab::domain_impl;
 
-z_cfg_t* prog (variable_factory_t &vfac) {
+z_cfg_t* prog(variable_factory_t &vfac) {
   // Defining program variables
   z_var exponent(vfac["exponent"], crab::INT_TYPE, 32);
   z_var a(vfac["a"], crab::INT_TYPE, 64);
@@ -29,7 +29,7 @@ z_cfg_t* prog (variable_factory_t &vfac) {
   auto& start = cfg->insert("start");
   auto& loop = cfg->insert("loop");
   auto& ret = cfg->insert("ret");
-  
+
   // The control flow
   // TODO: may need revision
   start >> loop;
@@ -51,7 +51,7 @@ z_cfg_t* prog (variable_factory_t &vfac) {
 }
 
 /* Example of how to infer invariants from the above CFG */
-int main (int argc, char** argv) {
+int main(int argc, char** argv) {
   bool stats_enabled = false;
   if (!crab_tests::parse_user_options(argc, argv, stats_enabled)) {
       return 1;
