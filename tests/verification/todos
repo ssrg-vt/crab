@@ -24,7 +24,7 @@ z_pk_elina_domain_t
 z_wrapped_interval_domain_t
 z_as_dis_int_t
 z_as_sdbm_t
-z_as_num_null_t)
+z_as_num_null_t
 z_as_bool_num_t
 z_ag_sdbm_intv_t
 z_ag_num_null_t
